@@ -481,7 +481,7 @@ if(!class_exists('AKD_verify')) {
 			$header = array();
 			$header[] = 'Content-length: 0';
 			$header[] = 'Content-type: application/json';
-			$header[] = 'Authorization: Bearer q93ASvVTmTXxoc1ghwH2JbwmsjgSPeok';
+			$header[] = 'Authorization: Bearer '.$api_key;
 			
 			curl_setopt($ch, CURLOPT_HTTPHEADER, $header);
 			curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0); 
